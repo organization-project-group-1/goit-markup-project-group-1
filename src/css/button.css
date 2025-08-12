@@ -1,0 +1,54 @@
+/* Styles for Mobile devices */
+.btn {
+  padding: 14px 87px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 12px;
+  transition: background-color var(--trans-norm), color var(--trans-norm);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+}
+
+.btn-on-dark-bg {
+  padding: 16px 68px;
+  border: 1px solid rgba(var(--white-rgb), 0.4);
+  transition: border none;
+}
+
+.btn-on-dark-bg:hover,
+.btn-on-dark-bg:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+@media only screen and (min-width: 375px) {
+  .btn {
+    min-width: 295px;
+  }
+}
+
+/* Styles for Tablet & Desktop devices */
+@media only screen and (min-width: 768px) {
+  .btn {
+    min-width: 306px;
+    padding: 16px 64px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .btn-on-dark-bg {
+    min-width: 309px;
+    padding: 16px 68px;
+  }
+}
+
+/* temporary styles */
+.dark-bg {
+  padding: 20px;
+  background-color: var(--green);
+}

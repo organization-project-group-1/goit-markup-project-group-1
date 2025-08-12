@@ -4,12 +4,12 @@
 
   /* colors */
   --black: #121417;
-  --black-rgb: rgb(18, 20, 23);
+  --black-rgb: 18, 20, 23;
   --green: #4dc274;
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #fff;
-  --white-rgb: rgb(255, 255, 255);
+  --white-rgb: 255, 255, 255;
   --accent-color: #38ae5f;
 
   /* transition */

@@ -12,6 +12,8 @@
 @import url('./container.css');
 @import url('./animations.css');
 
+@import url('./button.css');
+
 /* Sections style */
 @import url('./header.css');
 @import url('./mobile-menu.css');
