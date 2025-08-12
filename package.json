@@ -1,20 +1,20 @@
 {
-  "name": "vanilla-app-template",
+  "name": "goit-markup-project-group-1",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "dev": "vite --open",
+    "build": "vite build --base=/goit-markup-project-group-1/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
-    "vite": "^5.4.6"
+    "vite": "^7.1.2"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Vitalii Vasylets <mohara88s@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
