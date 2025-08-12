@@ -17,6 +17,7 @@
   "author": "Vitalii Vasylets <mohara88s@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "modern-normalize": "^3.0.1",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

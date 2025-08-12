@@ -24,11 +24,19 @@ a {
 }
 
 button {
+  display: block;
+  color: currentColor;
   cursor: pointer;
+  font-family: inherit;
+  border: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
