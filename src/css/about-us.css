@@ -1,0 +1,162 @@
+.about-title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.about-inner {
+  position: relative;
+}
+
+.about-inner::after {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  content: '';
+  z-index: -1;
+  width: 39px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--green);
+}
+
+.about-subtitle {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7; /* 171.429% */
+  color: rgba(var(--black-rgb), 0.5);
+}
+
+@media screen and (min-width: 375px) {
+  .about-subtitle {
+    max-width: 334px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-item {
+  max-width: 335px;
+  border-radius: 16px;
+  background-color: var(--gray);
+}
+
+.about-container {
+  padding: 32px;
+}
+
+.about-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2; /* 133.333% */
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.about-wrapper {
+  position: relative;
+  max-width: 335px;
+  height: 313px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background-color: var(--green);
+}
+
+.about-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**
+  |============================
+  | Tablet Styles
+  |============================
+*/
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .about-inner::after {
+    left: -1px;
+    width: 52px;
+    height: 16px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 64px;
+    max-width: 658px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .about-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .about-wrapper {
+    max-width: 704px;
+    height: 243px;
+  }
+}
+
+/**
+  |============================
+  | Desktop Styles
+  |============================
+*/
+
+@media screen and (min-width: 1280px) {
+  .about-inner::after {
+    left: -5px;
+    width: 62px;
+    height: 20px;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-list {
+    width: 682px;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .about-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .about-wrapper {
+    width: 310px;
+    height: 352px;
+    margin: 0;
+  }
+}
