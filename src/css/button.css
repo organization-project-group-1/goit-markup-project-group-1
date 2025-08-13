@@ -1,5 +1,7 @@
 /* Styles for Mobile devices */
 .btn {
+  display: inline-block;
+  text-align: center;
   padding: 14px 0;
   font-family: var(--font-family);
   font-weight: 700;

@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.proposal-section-title {
+.proposal-section-heading {
   margin-bottom: 65px;
   font-weight: 700;
   font-size: 38px;
@@ -21,7 +21,7 @@
   color: var(--white);
 }
 
-.proposal-section-title-span {
+.proposal-section-heading-span {
   color: var(--light-green-gradient);
 }
 
@@ -118,7 +118,7 @@
     overflow: visible;
   }
 
-  .proposal-section-title {
+  .proposal-section-heading {
     margin-bottom: 83px;
     font-size: 60px;
     line-height: 1.17;
@@ -192,7 +192,7 @@
     padding: 64px 64px 142px 64px;
   }
 
-  .proposal-section-title {
+  .proposal-section-heading {
     margin-bottom: 133px;
     max-width: 776px;
   }
