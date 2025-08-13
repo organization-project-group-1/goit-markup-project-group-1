@@ -4,8 +4,14 @@
   text-align: center;
   color: #121417;
   margin-bottom: 16px;
-  text-transform: capitalize;
+  margin-top: 0px;
 }
+
+.our-teachers-section {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
 .highlight {
   position: relative;
 }
@@ -14,8 +20,8 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -0.1em;
-  width: 170px;
+  bottom: 0.01em;
+  width: 100%;
   height: 20px;
   background-color: #bee8cc;
   border-radius: 8px;
@@ -34,8 +40,15 @@
   flex-wrap: wrap;
   gap: 32px;
   padding: 0;
-  margin: 0;
+  margin: 64px 0 0;
   list-style: none;
+}
+.teachers_item {
+  max-width: 232px;
+  text-align: center;
+  height: 318px;
+  gap: 32px;
+  align-items: center;
 }
 
 .teachers_name {
@@ -54,17 +67,11 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
-.teachers_item {
-  max-width: 232px;
-  height: 318px;
-  text-align: center;
-  gap: 32px;
-}
 .teachers_item img {
   width: 150px;
   height: 150px;
-  border-radius: 500px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: block;
   object-fit: cover;
-  margin-bottom: 16px;
-  margin-top: 64px;
 }
