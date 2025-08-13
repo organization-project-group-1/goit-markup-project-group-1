@@ -21,7 +21,6 @@
 }
 .socials-link:hover, .socials-link:focus{
 	border-color: rgba(var(--green), 0.1);
-	fill: var(--green);
 }
 
 .socials-link:hover > .socials-svg, .socials-link:focus > .socials-svg{
