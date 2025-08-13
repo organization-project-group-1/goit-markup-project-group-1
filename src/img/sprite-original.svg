@@ -44,5 +44,11 @@
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M6.37 22.318h24.13"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M14.022 15.348h16.478"></path>
 </symbol>
+<symbol id="icon-check" viewBox="0 0 20 20">
+<path d="M16.6667 5L7.50001 14.1667L3.33334 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
+<symbol id="icon-check-s" viewBox="0 0 10 8">
+<path d="M9 1L3.5 7L1 4.27273" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
 </defs>
 </svg>
