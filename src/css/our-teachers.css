@@ -1,0 +1,85 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-teachers {
+  width: 1024px;
+  height: 506px;
+}
+.container {
+  width: 832px;
+  height: 124px;
+}
+.teachers_title {
+  font: 700 40px / 1.2 'Manrope', sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 170px;
+  height: 20px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
+}
+.teachers_supporting_text {
+  font: 400 18px / 1.7 'Manrope', sans-serif;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  max-width: 709px;
+  margin: 0 auto;
+}
+.teachers_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.teachers_name {
+  margin-bottom: 8px;
+  font: 700 20px / 1.2 'Manrope', sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+}
+.teachers_wrapper {
+  padding: 16px 0;
+}
+.teachers_role {
+  font: 400 16px / 1.5 'Manrope', sans-serif;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.teachers_item {
+  max-width: 232px;
+  height: 318px;
+  text-align: center;
+  gap: 32px;
+}
+.teachers_item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 500px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  margin-top: 64px;
+}
