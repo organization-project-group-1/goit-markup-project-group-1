@@ -11,6 +11,7 @@
   --white: #fff;
   --white-rgb: 255, 255, 255;
   --accent-color: #38ae5f;
+  --light-green-gradient: #bee8cc;
 
   /* transition */
   --trans-norm: 250ms cubic-bezier(0.4, 0, 0.2, 1);

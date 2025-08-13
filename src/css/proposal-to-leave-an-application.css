@@ -1,0 +1,233 @@
+/* Styles for Mobile devices */
+.proposal-section-container {
+  max-width: 335px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    80deg,
+    var(--green) 0%,
+    var(--light-green-gradient) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.proposal-section-title {
+  margin-bottom: 65px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  color: var(--white);
+}
+
+.proposal-section-title-span {
+  color: var(--light-green-gradient);
+}
+
+.proposal-card {
+  width: 100%;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.proposal-card-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.proposal-card-wrapper::before,
+.proposal-card-wrapper::after {
+  content: '';
+  border-radius: 16px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  pointer-events: none;
+}
+
+.proposal-card-wrapper::before {
+  background-color: rgba(var(--white-rgb), 0.5);
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(11deg);
+}
+
+.proposal-card-wrapper::after {
+  background-color: var(--light-green);
+  z-index: -2;
+  transform: translate(-50%, -50%) rotate(-9deg);
+}
+
+.proposal-card-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+.proposal-card-list {
+  margin-bottom: 20px;
+}
+.proposal-card-item {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.check-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--green);
+  fill: none;
+}
+.check {
+  display: none;
+}
+.proposal-card-feature {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+.proposal-card-btn {
+  min-width: 255px;
+  padding: 14px 58px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.proposal-card-books-img {
+  display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .proposal-section-container {
+    max-width: 704px;
+    padding: 64px 32px 93px 32px;
+    overflow: visible;
+  }
+
+  .proposal-section-title {
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .proposal-card {
+    padding: 65px 32px 63px;
+    border-radius: 30px;
+  }
+
+  .proposal-card-wrapper {
+    position: relative;
+    width: 668px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .proposal-card-wrapper::before {
+    border-radius: 30px;
+  }
+  .proposal-card-wrapper::after {
+    transform: translate(-50%, -50%) rotate(-10deg);
+    border-radius: 30px;
+  }
+
+  .proposal-card-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .proposal-card-list {
+    margin-bottom: 32px;
+    max-width: 451px;
+  }
+  .proposal-card-item {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .check-container {
+    width: 28px;
+    height: 28px;
+  }
+  .check-mobile {
+    display: none;
+  }
+  .check {
+    display: block;
+  }
+
+  .proposal-card-feature {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-card-btn {
+    min-width: 306px;
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .proposal-card-books-img {
+    display: block;
+    position: absolute;
+    top: 174px;
+    left: 503px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .proposal-section-container {
+    max-width: 1152px;
+    padding: 64px 64px 142px 64px;
+  }
+
+  .proposal-section-title {
+    margin-bottom: 133px;
+    max-width: 776px;
+  }
+
+  .proposal-card {
+    padding: 65px 64px 64px;
+  }
+
+  .proposal-card-wrapper {
+    width: 1024px;
+  }
+
+  .proposal-card-wrapper::after {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+
+  .proposal-card-title {
+    margin-bottom: 40px;
+  }
+
+  .proposal-card-list {
+    margin-bottom: 39px;
+    max-width: 654px;
+  }
+
+  .proposal-card-books-img {
+    top: 129px;
+    left: 810px;
+  }
+}

@@ -1,10 +1,10 @@
 /* Styles for Mobile devices */
 .btn {
-  padding: 14px 87px;
+  padding: 14px 78px;
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 14px;
+  line-height: 1.71;
   background-color: var(--green);
   color: var(--white);
   border-radius: 12px;
@@ -17,7 +17,6 @@
 }
 
 .btn-on-dark-bg {
-  padding: 16px 68px;
   border: 1px solid rgba(var(--white-rgb), 0.4);
   transition: border none;
 }
@@ -38,12 +37,14 @@
   .btn {
     min-width: 306px;
     padding: 16px 64px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 18px;
+    line-height: 1.56;
   }
   .btn-on-dark-bg {
     min-width: 309px;
-    padding: 16px 68px;
+    padding: 16px 65px;
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
 
