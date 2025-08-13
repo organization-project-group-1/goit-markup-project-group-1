@@ -1,1 +1,151 @@
+.logo {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--white);
+}
+.logo--green {
+	color: var(--green);
+}
 
+.footer {
+}
+.footer  .container {
+	font-size: 14px;
+	line-height: 1.29;
+	letter-spacing: -0.02em;
+	color: rgba(var(--white-rgb), 0.6);
+	background: var(--black);
+}
+.footer-references {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 40px 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-info {
+}
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.footer-address {
+}
+.address {
+}
+.adress-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.address-item {
+}
+.address-text {
+	margin-bottom: 4px;
+}
+.address-link {
+	font-weight: 600;
+	color: var(--white);
+	transition: text-decoration var(--trans-norm);
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer-nav-item{
+	position: relative;
+}
+
+.footer-nav-link {
+	font-weight: 600;
+	line-height: 1.29;
+	color: var(--white);
+}
+
+.footer-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 27px;
+  height: 2px; 
+  background-color: var(--green);
+  transform: scaleX(0); 
+  transform-origin: left; 
+  transition: transform 0.3s ease;
+}
+
+.footer-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.footer-socials {
+}
+
+.footer-legal {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 20px 0;
+}
+.footer-rights {
+}
+
+.footer-legal-list {
+	display: flex;
+	gap: 18px;
+}
+.footer-legal-item {
+}
+
+.footer-legal-link{
+	transition: text-decoration var(--trans-norm);
+}
+
+.footer-legal-link:hover, .footer-legal-link:focus, .address-link:hover, .address-link:focus {
+	text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 768px){
+	.footer-references {
+		flex-direction: row;
+		gap: 0;
+		padding: 32px 0 110px;
+	}
+	
+	.footer-info{
+		margin-right: 153px;
+	}
+	
+	.footer-logo {
+		margin-bottom: 32px;
+	}
+	
+		.footer-nav{
+		margin-right: auto;
+	}
+	
+	.socials-link{
+		width: 44px;
+		height: 44px;
+	}
+	
+	.footer-legal {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (min-width: 1280px){
+	.footer-references {
+		padding: 64px 0;
+	}
+	
+	.footer-info{
+		margin-right: 314px;
+	}
+}
