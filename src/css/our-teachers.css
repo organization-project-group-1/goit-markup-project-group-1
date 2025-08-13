@@ -1,18 +1,3 @@
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.page-teachers {
-  width: 1024px;
-  height: 506px;
-}
-.container {
-  width: 832px;
-  height: 124px;
-}
 .teachers_title {
   font: 700 40px / 1.2 'Manrope', sans-serif;
   letter-spacing: -0.02em;
