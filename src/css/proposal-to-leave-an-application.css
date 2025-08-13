@@ -100,15 +100,14 @@
   letter-spacing: -0.02em;
   color: var(--black);
 }
-.proposal-card-btn {
-  min-width: 255px;
-  padding: 14px 58px;
-  font-size: 14px;
-  line-height: 1.71;
-}
 
 .proposal-card-books-img {
   display: none;
+}
+@media only screen and (max-width: 767px) {
+  .proposal-card-btn {
+    min-width: 255px;
+  }
 }
 
 /* Styles for Tablet devices */
@@ -176,13 +175,6 @@
   .proposal-card-feature {
     font-size: 20px;
     line-height: 1.2;
-  }
-
-  .proposal-card-btn {
-    min-width: 306px;
-    padding: 16px 64px;
-    font-size: 18px;
-    line-height: 1.56;
   }
 
   .proposal-card-books-img {
