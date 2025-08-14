@@ -112,3 +112,29 @@
         line-height: 24px;
    }
 
+
+   @media screen and (min-width: 768px) {
+    
+       .plans {
+           flex-direction: row;
+           flex-wrap: wrap;
+           gap: 32px;
+           margin-bottom: 32px;
+       }
+
+       .plan {
+           flex-basis: calc((100% - 32px) / 2);
+       }
+
+       
+   }
+
+   @media screen and (min-width: 1280px) {
+    .plans {
+            flex-wrap: nowrap;
+            
+        }
+        .plan {
+                flex-basis: calc((100% - 32px) / 3);
+            }
+   }
