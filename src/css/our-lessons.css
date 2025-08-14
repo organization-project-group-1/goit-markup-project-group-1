@@ -83,11 +83,33 @@
     line-height: 24px;
     flex-shrink: 0;
     max-width: 295px;
-    max-height: 132px;
+    min-height: 132px;
     margin-bottom: 20px;
 }
 
 .btn{
     margin-bottom: 40px;
 }
+
+  .plan.plan-featured{
+    background-color: var(--green);
+  }
+
+  .plan.plan-featured .plan-title,
+  .plan.plan-featured .plan-price,
+  .plan.plan-featured .plan-amount,
+  .plan.plan-featured .plan-period {
+      color: var(--white);
+  }
+
+
+   .plan.plan-featured .plan-desc {
+    color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+   }
 
