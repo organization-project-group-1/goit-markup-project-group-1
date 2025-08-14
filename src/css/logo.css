@@ -1,0 +1,8 @@
+.logo {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--white);
+}
+.logo--green {
+	color: var(--green);
+}
