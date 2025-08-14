@@ -5,8 +5,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
 }
 
 .hero .container {
@@ -114,7 +113,6 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   .hero-content {
@@ -180,7 +178,7 @@
 @media screen and (min-width: 1280px) {
   .hero {
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 96px;
   }
 
   .hero-content {
