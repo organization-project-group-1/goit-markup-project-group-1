@@ -39,7 +39,7 @@
     max-height: 400px;
     flex-shrink: 0;
     border-radius: 16px;
-    border: 1px solid #4DC274;
+    border: 1px solid var(--green);
     background: #FFF;
     padding-left: 20px;
     padding-right: 21px;
@@ -106,7 +106,6 @@
    .plan.plan-featured .plan-desc {
     color: rgba(255, 255, 255, 0.70);
         text-align: center;
-        font-family: Manrope;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
