@@ -59,7 +59,7 @@
 .proposal-card-wrapper::after {
   background-color: var(--light-green);
   z-index: -2;
-  transform: translate(-50%, -50%) rotate(-9deg);
+  transform: translate(calc(-50% + 7px), calc(-50% - 4px)) rotate(-9deg);
 }
 
 .proposal-card-title {
@@ -138,6 +138,7 @@
   }
 
   .proposal-card-wrapper::before {
+    transform: translate(calc(-50% + 6px), -50%) rotate(11deg);
     border-radius: 30px;
   }
   .proposal-card-wrapper::after {
@@ -203,6 +204,10 @@
 
   .proposal-card-wrapper {
     width: 1024px;
+  }
+
+  .proposal-card-wrapper::before {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg);
   }
 
   .proposal-card-wrapper::after {
