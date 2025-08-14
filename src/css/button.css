@@ -10,7 +10,9 @@
   background-color: var(--green);
   color: var(--white);
   border-radius: 12px;
-  transition: background-color var(--trans-norm), color var(--trans-norm);
+  transition:
+    background-color var(--trans-norm),
+    color var(--trans-norm);
 }
 
 .btn:hover,
