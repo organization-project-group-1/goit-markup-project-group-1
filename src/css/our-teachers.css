@@ -67,6 +67,8 @@
   display: block;
   margin: 0 auto 16px;
   object-fit: cover;
+  margin-bottom: 16px;
+  margin-top: 64px;
 }
 
 .teachers_name {
