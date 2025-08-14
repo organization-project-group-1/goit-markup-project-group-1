@@ -1,7 +1,318 @@
-.application-section {
-  background-color: gold;
+.application-title {
+  margin: 0 auto;
 }
 
-.application-title {
-  background-color: rgb(243, 33, 190);
+.application-head {
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: var(--black);
+}
+
+.application-head-span {
+  display: inline-block;
+  position: relative;
+}
+
+.application-head-span::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  content: '';
+  width: 100%;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: var(--light-green-gradient);
+}
+
+p.application-text {
+  margin-bottom: 20px;
+}
+
+.application-text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.8);
+}
+
+.application-pic-info {
+  display: none;
+}
+
+.application-inputs {
+  margin: 0 auto 20px;
+}
+
+.application-form-field {
+  margin-bottom: 18px;
+}
+
+.application-form-input {
+  display: flex;
+  padding: 16px 18px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  outline: transparent;
+  background-color: transparent;
+  transition: var(--animation);
+  transition-property: border-color;
+}
+
+.application-form-comment {
+  display: block;
+  width: 100%;
+  height: 94px;
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  outline: transparent;
+  background-color: transparent;
+  resize: none;
+  transition: border-color var(--trans-norm);
+}
+
+.application-form-input::placeholder,
+.application-form-comment::placeholder {
+  color: var(--black);
+}
+
+.application-form-input:focus,
+.application-form-comment:focus {
+  border-color: var(--green);
+}
+
+.application-radio-title {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  color: var(--black);
+}
+
+.application-radio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.application-radio-label {
+  position: relative;
+
+  padding-left: 27px;
+  margin-bottom: 8px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  color: var(--black);
+}
+
+.application-radio-input {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  border-radius: 10px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  transition: border-color var(--trans-norm);
+}
+
+.radio-dot {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color var(--trans-norm);
+}
+
+input[type='radio']:checked
+  + .application-radio-label
+  > .application-radio-input {
+  border-color: var(--green);
+}
+
+input[type='radio']:checked + .application-radio-label .radio-dot {
+  background-color: var(--green);
+}
+
+input[type='radio']:focus-visible
+  + .application-radio-label
+  > .application-radio-input {
+  border-color: var(--green);
+}
+
+input[type='radio']:hover
+  + .application-radio-label
+  > .application-radio-input {
+  border-color: var(--green);
+}
+
+.application-btn {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+}
+
+.application-form-desc {
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.application-form-link {
+  color: rgba(18, 20, 23, 0.5);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .application-head {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  p.application-text {
+    margin-bottom: 64px;
+  }
+
+  .application-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: rgba(18, 20, 23, 0.5);
+  }
+
+  .application-block {
+    padding: 0 102px;
+    width: 704px;
+  }
+
+  .application-inputs {
+    margin-bottom: 32px;
+  }
+
+  .application-form-field {
+    margin-bottom: 18px;
+  }
+
+  .application-form-input {
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-form-comment {
+    height: 104px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-radio-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+
+  .application-radio {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .application-radio-label {
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+  }
+
+  .application-form-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-title {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .application-text {
+    width: 709px;
+    margin: 0 auto;
+  }
+
+  .application-block {
+    display: flex;
+    width: 1024px;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .application-pic-info {
+    display: block;
+    border-radius: 30px;
+    width: 492px;
+    height: 578px;
+    background: var(--green);
+  }
+
+  .application-pic-info img {
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .application-pic-info h3 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .application-pic-info p {
+    margin: 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .application-form {
+    width: 500px;
+  }
 }
