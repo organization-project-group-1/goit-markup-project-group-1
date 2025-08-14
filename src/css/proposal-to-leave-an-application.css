@@ -59,7 +59,7 @@
 .proposal-card-wrapper::after {
   background-color: var(--light-green);
   z-index: -2;
-  transform: translate(-50%, -50%) rotate(-9deg);
+  transform: translate(calc(-50% + 7px), calc(-50% - 4px)) rotate(-9deg);
 }
 
 .proposal-card-title {
@@ -76,11 +76,11 @@
 .proposal-card-item {
   margin-bottom: 16px;
   display: flex;
-  gap: 8px;
   align-items: center;
 }
 .check-container {
   display: flex;
+  margin-right: 8px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -138,6 +138,7 @@
   }
 
   .proposal-card-wrapper::before {
+    transform: translate(calc(-50% + 6px), -50%) rotate(11deg);
     border-radius: 30px;
   }
   .proposal-card-wrapper::after {
@@ -157,7 +158,6 @@
   .proposal-card-item {
     margin-bottom: 16px;
     display: flex;
-    gap: 16px;
     align-items: center;
   }
 
@@ -167,6 +167,9 @@
   }
   .check-mobile {
     display: none;
+  }
+  .check-container {
+    margin-right: 16px;
   }
   .check {
     display: block;
@@ -189,7 +192,7 @@
 @media only screen and (min-width: 1280px) {
   .proposal-section-container {
     max-width: 1152px;
-    padding: 64px 64px 142px 64px;
+    padding: 65px 64px 142px 64px;
   }
 
   .proposal-section-heading {
@@ -198,15 +201,23 @@
   }
 
   .proposal-card {
-    padding: 65px 64px 64px;
+    padding: 65px 64px 63px;
   }
 
   .proposal-card-wrapper {
     width: 1024px;
   }
 
+  .proposal-card-wrapper::before {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg);
+    width: 1010px;
+    height: 401px;
+  }
+
   .proposal-card-wrapper::after {
     transform: translate(-50%, -50%) rotate(-8deg);
+    width: 1050px;
+    height: 463px;
   }
 
   .proposal-card-title {
@@ -215,7 +226,7 @@
 
   .proposal-card-list {
     margin-bottom: 39px;
-    max-width: 654px;
+    max-width: 700px;
   }
 
   .proposal-card-books-img {

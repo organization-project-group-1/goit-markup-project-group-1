@@ -2,6 +2,11 @@
 .our-teachers-section {
   text-align: center;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .teachers_title {
   font:
@@ -52,7 +57,7 @@
   text-align: center;
 }
 
-.teachers_item img {
+.teachers_photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
