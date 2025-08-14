@@ -1,0 +1,138 @@
+/* ====== Our Lessons Section ====== */
+
+/* Mobile-first */
+.section-head {
+    text-align: center;
+}
+
+.section-head h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.64px;
+    color: var(--black);
+}
+
+
+.section-lead {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
+}
+
+.plans {
+    display: grid;
+    gap: 20px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 20px;
+    background-color: var(--white);
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 16px;
+}
+
+.plan-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--primary-text-color, #121417);
+}
+
+.plan-price {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--primary-text-color, #121417);
+}
+
+.plan-amount {
+    font-size: 32px;
+}
+
+.plan-period {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
+}
+
+.plan-desc {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
+}
+
+/* Dark card style */
+.plan-card-dark {
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+}
+
+.plan-card-dark .plan-title,
+.plan-card-dark .plan-period,
+.plan-card-dark .plan-desc,
+.plan-card-dark .plan-price {
+    color: var(--white);
+}
+
+/* ≥375px */
+@media only screen and (min-width: 375px) {
+    .section-head h2 {
+        font-size: 28px;
+    }
+
+    .plan-price {
+        font-size: 36px;
+    }
+}
+
+/* ≥768px (tablet) */
+@media only screen and (min-width: 768px) {
+    .plans {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .plan-card {
+        padding: 40px;
+    }
+
+    /* Щоб усі картки мали однакову висоту і кнопка була внизу */
+    .plan {
+        display: flex;
+    }
+
+    .plan-card {
+        flex: 1;
+    }
+
+    .dark-bg {
+        margin-top: auto;
+    }
+
+    /* Переносимо виділену картку вниз, як у макеті */
+    .plan-featured {
+        order: 2;
+    }
+}
+
+/* ≥1280px (desktop) */
+@media only screen and (min-width: 1280px) {
+    .plans {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Повертаємо порядок */
+    .plan-featured {
+        order: 0;
+    }
+}
