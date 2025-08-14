@@ -183,6 +183,10 @@
     padding-bottom: 16px;
   }
 
+  .hero.section {
+    padding-bottom: 96px;
+  }
+
   .hero-content {
     height: 600px;
     padding: 0 64px;
