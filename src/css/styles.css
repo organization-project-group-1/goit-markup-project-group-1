@@ -9,10 +9,13 @@
 @import url('./fonts.css');
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./section.css');
 @import url('./container.css');
 @import url('./animations.css');
 
 @import url('./button.css');
+@import url('./social-icons.css');
+@import url('./logo.css');
 
 /* Sections style */
 @import url('./header.css');

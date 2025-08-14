@@ -17,6 +17,11 @@
   --trans-norm: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--black);
   background-color: var(--white);
