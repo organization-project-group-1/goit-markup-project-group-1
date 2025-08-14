@@ -1,33 +1,11 @@
-.reviews-container {
-    margin-bottom: 40px;
-}
-
-.students-review {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-/* Планшет */
-@media (min-width: 768px) {
-    .students-review {
-        padding-bottom: 100px;
-    }
-}
-
-/* Десктоп */
-@media (min-width: 1200px) {
-    .students-review {
-        padding-bottom: 150px;
-    }
-}
-
 .reviews-heading {
-    font: 700 32px / 36px 'Manrope', sans-serif;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #121417;
-    margin-top: 80px;
-    margin-bottom: 16px;
+  font:
+    700 32px / 36px 'Manrope',
+    sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  margin-bottom: 16px;
 }
 
 .highlight {
@@ -48,113 +26,116 @@
 }
 
 .reviews-supporting-text {
-    font: 400 14px/24px 'Manrope', sans-serif;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
-    max-width: 647px;
-    margin: 0 auto;
+  font:
+    400 14px/24px 'Manrope',
+    sans-serif;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  max-width: 647px;
+  margin: 40px auto;
 }
 
 /* Планшет */
 @media (min-width: 768px) and (max-width: 1199px) {
-    .reviews-supporting-text {
-        width: 704px;
-    }
+  .reviews-supporting-text {
+    width: 704px;
+    margin: 64px auto;
+  }
 }
 
 /* Десктоп */
-@media (min-width: 1200px) {
-    .reviews-supporting-text {
-        width: 886px;
-    }
+@media (min-width: 1280px) {
+  .reviews-supporting-text {
+    width: 886px;
+  }
 }
 
 .students-list {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    gap: 32px;
-    justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  gap: 32px;
+  justify-content: center;
 }
 
 /* Мобілка — 1 картка */
 @media (max-width: 767px) {
-    .students-list {
-        grid-template-columns: auto;
-    }
+  .students-list {
+    grid-template-columns: auto;
+  }
 }
 
 /* Планшет — 2 картки */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .students-list {
-        grid-template-columns: repeat(2, auto);
-    }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .students-list {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 /* Десктоп — 3 картки */
-@media (min-width: 1200px) {
-    .students-list {
-        grid-template-columns: repeat(3, auto);
-    }
+@media (min-width: 1280px) {
+  .students-list {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .student-card {
-    width: 320px;
-    height: 326px;
-    background-color: #F3F5F6;
-    border-radius: 16px;
-    padding: 16px;
-    box-sizing: border-box;
+  width: 320px;
+  height: 326px;
+  background-color: #f3f5f6;
+  border-radius: 16px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .student-label {
-    width: 288px;
-    height: 78px;
-    background-color: #4DC274;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    gap: 16px;
-    box-sizing: border-box;
-    margin: 16px 0 32px 0;
+  width: 288px;
+  height: 78px;
+  background-color: #4dc274;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 16px;
+  box-sizing: border-box;
+  margin: 16px 0 32px 0;
 }
 
 .student-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .student-name {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
 }
 
 .student-role {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: rgba(255, 255, 255, 0.5);
-    margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
 }
 
 .student-review {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgba(18, 20, 23, 0.5);
-    margin: 20px 14px 14px;
-    width: 267px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: rgba(18, 20, 23, 0.5);
+  margin: 20px 14px 14px;
+  width: 267px;
 }
