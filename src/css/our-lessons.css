@@ -12,127 +12,82 @@
     line-height: 36px;
     letter-spacing: -0.64px;
     color: var(--black);
+    margin-bottom: 16px;
 }
 
 
 .section-lead {
-    margin-top: 16px;
+    text-align: center;
     font-size: 14px;
-    line-height: 1.5;
-    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.50);;
+    margin-bottom: 40px; /*This is rule is overwritten by reset file */
 }
 
 .plans {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    max-width: 336px;
+    max-height: 400px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #4DC274;
+    background: #FFF;
+    padding-left: 20px;
+    padding-right: 21px;
 }
 
 .plan-card {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 40px 20px;
-    background-color: var(--white);
-    border: 1px solid rgba(18, 20, 23, 0.1);
-    border-radius: 16px;
 }
 
 .plan-title {
-    margin-bottom: 16px;
+    color: var(--black);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--primary-text-color, #121417);
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    padding-top: 40px;
+    margin-bottom: 16px
 }
 
 .plan-price {
-    margin-bottom: 16px;
-    font-weight: 800;
+    text-align: center;
     font-size: 32px;
-    line-height: 1.25;
-    color: var(--primary-text-color, #121417);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
 }
 
-.plan-amount {
-    font-size: 32px;
-}
 
-.plan-period {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
-}
 
 .plan-desc {
-    margin-bottom: 24px;
+    color: rgba(18, 20, 23, 0.50);
+    text-align: center;
     font-size: 14px;
-    line-height: 1.5;
-    color: var(--secondary-text-color, rgba(18, 20, 23, 0.7));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    flex-shrink: 0;
+    max-width: 295px;
+    max-height: 132px;
+    margin-bottom: 20px;
 }
 
-/* Dark card style */
-.plan-card-dark {
-    background-color: var(--green);
-    border: none;
-    color: var(--white);
+.btn{
+    margin-bottom: 40px;
 }
 
-.plan-card-dark .plan-title,
-.plan-card-dark .plan-period,
-.plan-card-dark .plan-desc,
-.plan-card-dark .plan-price {
-    color: var(--white);
-}
-
-/* ≥375px */
-@media only screen and (min-width: 375px) {
-    .section-head h2 {
-        font-size: 28px;
-    }
-
-    .plan-price {
-        font-size: 36px;
-    }
-}
-
-/* ≥768px (tablet) */
-@media only screen and (min-width: 768px) {
-    .plans {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
-    }
-
-    .plan-card {
-        padding: 40px;
-    }
-
-    /* Щоб усі картки мали однакову висоту і кнопка була внизу */
-    .plan {
-        display: flex;
-    }
-
-    .plan-card {
-        flex: 1;
-    }
-
-    .dark-bg {
-        margin-top: auto;
-    }
-
-    /* Переносимо виділену картку вниз, як у макеті */
-    .plan-featured {
-        order: 2;
-    }
-}
-
-/* ≥1280px (desktop) */
-@media only screen and (min-width: 1280px) {
-    .plans {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* Повертаємо порядок */
-    .plan-featured {
-        order: 0;
-    }
-}
