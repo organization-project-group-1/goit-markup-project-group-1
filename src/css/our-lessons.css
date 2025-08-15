@@ -110,6 +110,18 @@
   .plan-btn {
     min-width: 304px;
   }
+
+  .section-lead {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  .section-head h2 {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.8px;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
