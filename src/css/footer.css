@@ -124,11 +124,6 @@
     margin-right: auto;
   }
 
-  .socials-link {
-    width: 44px;
-    height: 44px;
-  }
-
   .footer-legal {
     flex-direction: row;
     justify-content: space-between;
