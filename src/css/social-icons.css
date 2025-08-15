@@ -15,14 +15,27 @@
 	border: 1px solid rgba(var(--white-rgb), 0.1);
 	transition: border-color var(--trans-norm) ;
 }
-.socials-svg{
+.header-socials .socials-link,
+.mobile-socials .socials-link {
+	border-color: rgba(var(--black-rgb), 0.1);
+}
+.footer-socials .socials-svg,
+.mobile-socials .socials-svg {
 	fill: var(--white);
 	transition: fill var(--trans-norm);
 }
-.socials-link:hover, .socials-link:focus{
-	border-color: rgba(var(--green), 0.1);
+.socials-link:hover, .socials-link:focus {
+	border-color: rgba(var(--green-rgb), 0.1);
 }
 
 .socials-link:hover > .socials-svg, .socials-link:focus > .socials-svg{
 	fill: var(--green);
+}
+
+.mobile-socials .socials-link:hover, .socials-link:focus{
+	border-color: rgba(var(--black-rgb), 0.1);
+}
+
+.mobile-socials .socials-link:hover > .socials-svg, .socials-link:focus > .socials-svg{
+	fill: var(--black);
 }

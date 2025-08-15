@@ -3,6 +3,9 @@
 	font-size: 20px;
 	color: var(--white);
 }
+.header .logo {
+	color: var(--black);
+}
 .logo--green {
 	color: var(--green);
 }
