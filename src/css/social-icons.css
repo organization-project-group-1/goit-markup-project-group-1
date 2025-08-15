@@ -39,3 +39,15 @@
 .mobile-socials .socials-link:hover > .socials-svg, .socials-link:focus > .socials-svg{
 	fill: var(--black);
 }
+
+@media only screen and (min-width: 768px){
+	.socials-link {
+		width: 44px;
+		height: 44px;
+	}
+	
+	.socials-svg{
+		width: 28px;
+		height: 28px;
+	}
+}
