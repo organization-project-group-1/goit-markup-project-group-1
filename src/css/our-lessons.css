@@ -2,139 +2,115 @@
 
 /* Mobile-first */
 .section-head {
-    text-align: center;
+  text-align: center;
 }
 
 .section-head h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: -0.64px;
-    color: var(--black);
-    margin-bottom: 16px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+  color: var(--black);
+  margin-bottom: 16px;
 }
 
-
 .section-lead {
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    color: rgba(18, 20, 23, 0.50);;
-    margin-bottom: 40px; /*This is rule is overwritten by reset file */
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(var(--black-rgb), 0.5);
+  margin-bottom: 40px;
 }
 
 .plans {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.plan{
-    display: flex;
-    flex-direction: column;
-    max-width: 336px;
-    max-height: 400px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 1px solid var(--green);
-    background: #FFF;
-    padding-left: 20px;
-    padding-right: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .plan-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  max-width: 336px;
+  padding: 40px 20px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid var(--green);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.plan-card-featured {
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .plan-title {
-    color: var(--black);
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    padding-top: 40px;
-    margin-bottom: 16px
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
 }
 
 .plan-price {
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: -0.64px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
 }
-
-
 
 .plan-desc {
-    color: rgba(18, 20, 23, 0.50);
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    flex-shrink: 0;
-    max-width: 295px;
-    min-height: 132px;
-    margin-bottom: 20px;
+  color: rgba(var(--black-rgb), 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  flex-shrink: 0;
+  max-width: 295px;
+  min-height: 132px;
+  margin-bottom: 20px;
 }
 
-.btn{
-    margin-bottom: 40px;
+.plan-desc {
+  color: rgba(var(--black-rgb), 0.7);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.plan-card-featured .plan-desc {
+  color: var(--white);
 }
 
-  .plan.plan-featured{
-    background-color: var(--green);
+@media screen and (min-width: 768px) {
+  .plans {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
   }
 
-  .plan.plan-featured .plan-title,
-  .plan.plan-featured .plan-price,
-  .plan.plan-featured .plan-amount,
-  .plan.plan-featured .plan-period {
-      color: var(--white);
+  .plan {
+    flex-basis: calc((100% - 32px) / 2);
   }
+}
 
-
-   .plan.plan-featured .plan-desc {
-    color: rgba(255, 255, 255, 0.70);
-        text-align: center;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-   }
-
-
-   @media screen and (min-width: 768px) {
-    
-       .plans {
-           flex-direction: row;
-           flex-wrap: wrap;
-           gap: 32px;
-           margin-bottom: 32px;
-       }
-
-       .plan {
-           flex-basis: calc((100% - 32px) / 2);
-       }
-
-       
-   }
-
-   @media screen and (min-width: 1280px) {
-    .plans {
-            flex-wrap: nowrap;
-            
-        }
-        .plan {
-                flex-basis: calc((100% - 32px) / 3);
-            }
-   }
+@media screen and (min-width: 1280px) {
+  .plans {
+    flex-wrap: nowrap;
+  }
+  .plan {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
