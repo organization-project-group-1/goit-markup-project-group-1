@@ -20,7 +20,7 @@
   width: 39px;
   height: 12px;
   border-radius: 8px;
-  background-color: var(--green);
+  background-color: var(--light-green);
 }
 .about-item {
   max-width: 335px;

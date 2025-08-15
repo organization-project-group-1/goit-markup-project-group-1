@@ -1,0 +1,116 @@
+/* ====== Our Lessons Section ====== */
+
+/* Mobile-first */
+.section-head {
+  text-align: center;
+}
+
+.section-head h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.section-lead {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(var(--black-rgb), 0.5);
+  margin-bottom: 40px;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 336px;
+  padding: 40px 20px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid var(--green);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.plan-card-featured {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.plan-title {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+
+.plan-price {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
+}
+
+.plan-desc {
+  color: rgba(var(--black-rgb), 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  flex-shrink: 0;
+  max-width: 295px;
+  min-height: 132px;
+  margin-bottom: 20px;
+}
+
+.plan-desc {
+  color: rgba(var(--black-rgb), 0.7);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.plan-card-featured .plan-desc {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .plans {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .plan {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .plans {
+    flex-wrap: nowrap;
+  }
+  .plan {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
