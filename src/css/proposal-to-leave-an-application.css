@@ -101,6 +101,10 @@
   color: var(--black);
 }
 
+.proposal-card-btn {
+  animation: proposal-card-btn-animation 15s infinite;
+}
+
 .proposal-card-books-img {
   display: none;
 }
@@ -202,6 +206,7 @@
 
   .proposal-card {
     padding: 65px 64px 63px;
+    animation: proposal-card-animation3 15s infinite;
   }
 
   .proposal-card-wrapper {
@@ -212,12 +217,14 @@
     transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg);
     width: 1010px;
     height: 401px;
+    animation: proposal-card-animation1 15s infinite;
   }
 
   .proposal-card-wrapper::after {
     transform: translate(-50%, -50%) rotate(-8deg);
     width: 1050px;
     height: 463px;
+    animation: proposal-card-animation2 15s infinite;
   }
 
   .proposal-card-title {

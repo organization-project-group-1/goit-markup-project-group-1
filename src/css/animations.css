@@ -1,18 +1,100 @@
-@keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
+@keyframes proposal-card-animation1 {
+  0% {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg)
+      scale(1);
   }
-  to {
-    transform: translateX(-104%) translateY(-50%);
+  80% {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg)
+      scale(1);
+  }
+  82% {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(16deg)
+      scale(1.05);
+  }
+  84% {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg)
+      scale(1);
+  }
+  100% {
+    transform: translate(calc(-50% + 26px), calc(-50% + 15px)) rotate(11deg)
+      scale(1);
   }
 }
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
+
+@keyframes proposal-card-animation2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
   }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
+  82% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
+  }
+  84% {
+    transform: translate(-50%, -50%) rotate(-5deg) scale(1.05);
+  }
+  86% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
+  }
+}
+
+@keyframes proposal-card-animation3 {
+  0% {
+    transform: scale(1);
+  }
+  84% {
+    transform: scale(1);
+  }
+  86% {
+    transform: rotate(6deg) scale(1.05);
+  }
+  88% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  92% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes proposal-card-btn-animation {
+  0% {
+    transform: scale(1);
+  }
+  72% {
+    transform: scale(1);
+  }
+  74% {
+    transform: scale(1.1);
+  }
+  76% {
+    transform: scale(1);
+  }
+  78% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  92% {
+    transform: scale(1);
+  }
+  94% {
+    transform: scale(1.1);
+  }
+  96% {
+    transform: scale(1);
+  }
+  98% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
