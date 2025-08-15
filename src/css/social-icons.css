@@ -15,9 +15,11 @@
 	border: 1px solid rgba(var(--white-rgb), 0.1);
 	transition: border-color var(--trans-norm) ;
 }
-.header-socials .socials-link,
-.mobile-socials .socials-link {
+.header-socials .socials-link {
 	border-color: rgba(var(--black-rgb), 0.1);
+}
+.mobile-socials .socials-link {
+	border-color: rgba(var(--white-rgb), 0.1);
 }
 .footer-socials .socials-svg,
 .mobile-socials .socials-svg {
