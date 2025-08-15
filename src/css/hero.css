@@ -51,6 +51,18 @@
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-accent {
@@ -68,10 +80,53 @@
   background: var(--light-green);
   border-radius: 8px;
   z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 0.5s ease-out 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .hero-btn {
   margin-bottom: 72px;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--trans-norm), box-shadow var(--trans-norm);
+  animation: fadeInScale 0.75s ease-out 0.5s both, pulse 4s infinite 1s;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(77, 194, 116, 0.7);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 10px rgba(77, 194, 116, 0);
+  }
+}
+
+.hero-btn:hover {
+  animation: fadeInScale 0.75s ease-out 0.5s both;
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(77, 194, 116, 0.3);
 }
 
 .scroll-down {
@@ -87,6 +142,19 @@
   background-color: var(--white);
   transition: background-color var(--trans-norm);
   cursor: pointer;
+
+  animation: slideInRightScroll 0.5s ease-out 0.1s both;
+}
+
+@keyframes slideInRightScroll {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .scroll-down:hover,
@@ -158,11 +226,35 @@
     margin-bottom: 0;
   }
 
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(77, 194, 116, 0.6);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0 0 0 15px rgba(77, 194, 116, 0);
+    }
+  }
+
   .scroll-down {
     bottom: 32px;
     right: 32px;
     width: 48px;
     height: 48px;
+    animation: slideInRightScroll 0.5s ease-out 0.1s both;
+  }
+
+  @keyframes slideInRightScroll {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .scroll-icon {
@@ -218,5 +310,17 @@
   .scroll-down {
     bottom: 40px;
     right: 64px;
+    animation: slideInRightScroll 0.5s ease-out 0.1s both;
+  }
+
+  @keyframes slideInRightScroll {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
