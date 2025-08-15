@@ -21,14 +21,15 @@
 }
 
 .btn-on-dark-bg {
-  border: 1px solid rgba(var(--white-rgb), 0.4);
-  transition: border none;
+  box-shadow: inset 0 0 0 1px rgba(var(--white-rgb), 0.4);
+  transition: box-shadow var(--trans-norm);
 }
 
 .btn-on-dark-bg:hover,
 .btn-on-dark-bg:focus {
   background-color: var(--white);
   color: var(--green);
+  box-shadow: inset 0 0 0 1px transparent;
 }
 @media only screen and (min-width: 375px) {
   .btn {
