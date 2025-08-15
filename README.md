@@ -12,11 +12,11 @@ Modern responsive landing page for an English language learning platform.
 | **Scrum Master** | Oleksii Shcherbak | [@oleksii-shcherbak](https://github.com/oleksii-shcherbak) | Sprint planning, Hero section                                                           |
 | **Developer** | Andrii Tsylyuryk | [@AndriiTsylyuryk](https://github.com/AndriiTsylyuryk) | About Us section                                                                        |
 | **Developer** | Anna Kotenko | [@AnnaKotenkoInIT](https://github.com/AnnaKotenkoInIT) | Application form                                                                        |
-| **Developer** | Denys Babenko | [@antifloodbot](https://github.com/antifloodbot) | Student Reviews section                                                                 |
-| **Developer** | Dmytro Boiko | [@dmytro4308](https://github.com/dmytro4308) | Header & Navigation                                                                     |
-| **Developer** | Oksana Kovalchuk | [@KovalchukODS](https://github.com/KovalchukODS) | Footer section                                                                          |
-| **Developer** | Nataliia Valko | [@Natalka-01](https://github.com/Natalka-01) | Our Lessons section                                                                     |
-| **Developer** | Tetiana Karpenko | [@Tetiana-co](https://github.com/Tetiana-co) | Our Teachers section                                                                    |
+| **Developer** | Kostiantyn Talamaniuk | [@antifloodbot](https://github.com/antifloodbot) | Student Reviews section                                                                 |
+| **Developer** | Dmytro Beketov | [@dmytro4308](https://github.com/dmytro4308) | Header & Navigation                                                                     |
+| **Developer** | Vladyslav Kovalchuk | [@KovalchukODS](https://github.com/KovalchukODS) | Footer section                                                                          |
+| **Developer** | Nataliia Dubikova | [@Natalka-01](https://github.com/Natalka-01) | Our Lessons section                                                                     |
+| **Developer** | Tetiana Makara | [@Tetiana-co](https://github.com/Tetiana-co) | Our Teachers section                                                                    |
 
 ## Features
 
