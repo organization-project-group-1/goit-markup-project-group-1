@@ -21,5 +21,16 @@
     "modern-normalize": "^3.0.1",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
-  }
+  },
+  "description": "Цей проект було створено за допомогою Vite. Для знайомства та налаштування\r додаткових можливостей [звернись до документації](https://vitejs.dev/).",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/organization-project-group-1/goit-markup-project-group-1.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/organization-project-group-1/goit-markup-project-group-1/issues"
+  },
+  "homepage": "https://github.com/organization-project-group-1/goit-markup-project-group-1#readme"
 }
