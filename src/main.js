@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.students-wrapper');
   if (!list || !wrapper) return;
 
-  let timer, step, duration = 1000, pause = 10000;
+  let timer, step, duration = 1000, pause = 7000;
 
   const getGap = () => {
     const cs = getComputedStyle(list);
