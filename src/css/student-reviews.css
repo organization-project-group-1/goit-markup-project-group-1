@@ -32,14 +32,15 @@
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
   max-width: 647px;
-  margin: 40px auto;
+  margin-bottom: 40px;
 }
 
 /* Планшет */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviews-supporting-text {
     width: 704px;
-    margin: 64px auto;
+    margin: 0 auto 64px auto;
+    font-size: 18px;
   }
 }
 
@@ -50,56 +51,61 @@
   }
 }
 
+.students-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .students-list {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  display: grid;
-  gap: 32px;
-  justify-content: center;
+  display: flex;
+  gap: 16px;
 }
 
-/* Мобілка — 1 картка */
 @media (max-width: 767px) {
   .students-list {
-    grid-template-columns: auto;
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 }
 
-/* Планшет — 2 картки */
 @media (min-width: 768px) and (max-width: 1279px) {
   .students-list {
-    grid-template-columns: repeat(2, auto);
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 }
 
-/* Десктоп — 3 картки */
 @media (min-width: 1280px) {
   .students-list {
+    display: grid;
     grid-template-columns: repeat(3, auto);
+    gap: 32px;
+    justify-content: center;
   }
 }
 
 .student-card {
-  width: 320px;
-  height: 326px;
-  background-color: #f3f5f6;
+  width: 335px;
+  height: 278px;
+  background-color: var(--gray);
   border-radius: 16px;
-  padding: 16px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .student-label {
-  width: 288px;
-  height: 78px;
+  width: 100%;
   background-color: #4dc274;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  padding: 0 16px;
-  gap: 16px;
+  padding: 14px;
+  gap: 8px;
   box-sizing: border-box;
-  margin: 16px 0 32px 0;
+  margin-bottom: 20px;
 }
 
 .student-avatar {
@@ -136,6 +142,34 @@
   line-height: 24px;
   letter-spacing: 0;
   color: rgba(18, 20, 23, 0.5);
-  margin: 20px 14px 14px;
   width: 267px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .student-card {
+    width: 336px;
+    height: 326px;
+    padding: 32px 16px;
+  }
+
+  .student-label {
+    margin-bottom: 32px;
+  }
+
+  .student-review {
+    font-size: 16px;
+    width: 272px;
+  }
+}
+@media (min-width: 1280px) {
+  .student-card {
+    width: 320px;
+    height: 326px;
+    padding: 32px 16px;
+  }
+  .student-review {
+    width: 256px;
+    font-size: 14px;
+  }
 }
