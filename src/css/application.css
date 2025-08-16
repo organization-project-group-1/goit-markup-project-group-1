@@ -176,7 +176,6 @@ input[type='radio']:hover
 .application-btn {
   margin-bottom: 16px;
   width: 100%;
-  height: 52px;
   border: none;
   cursor: pointer;
 }
@@ -283,6 +282,7 @@ input[type='radio']:hover
 
   .application-pic-info {
     display: block;
+    padding-bottom: 40px;
     border-radius: 30px;
     width: 492px;
     height: 578px;
@@ -290,6 +290,7 @@ input[type='radio']:hover
   }
 
   .application-pic-info img {
+    padding: 0;
     border-radius: 30px;
     margin-bottom: 20px;
   }
@@ -305,7 +306,7 @@ input[type='radio']:hover
   }
 
   .application-pic-info p {
-    margin: 0 20px;
+    margin: 0px 6px;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
