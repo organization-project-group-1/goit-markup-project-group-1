@@ -57,7 +57,7 @@
 }
 
 .students-list {
-  width: 1069px;
+  width: calc(300% + 64px);
   display: flex;
 }
 
@@ -87,7 +87,6 @@
   width: 100%;
 }
 .student-card {
-  height: 278px;
   width: 100%;
   background-color: var(--gray);
   border-radius: 16px;
@@ -141,11 +140,19 @@
   line-height: 24px;
   letter-spacing: 0;
   color: rgba(18, 20, 23, 0.5);
-  width: 267px;
+  max-width: 267px;
   margin: 0 auto;
+}
+@media (min-width: 375px) {
+  .student-card {
+    height: 278px;
+  }
 }
 
 @media (min-width: 768px) {
+  .students-list {
+    width: 1069px;
+  }
   .student-card {
     width: 336px;
     height: 326px;
