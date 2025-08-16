@@ -1,5 +1,6 @@
 /* Styles for Mobile devices */
 .btn {
+  min-width: 100%;
   display: inline-block;
   text-align: center;
   padding: 14px 0;
@@ -33,7 +34,7 @@
 }
 @media only screen and (min-width: 375px) {
   .btn {
-    min-width: 295px;
+    min-width: 255px;
   }
 }
 

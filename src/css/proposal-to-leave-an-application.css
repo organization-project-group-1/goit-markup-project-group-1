@@ -102,13 +102,15 @@
 }
 
 .proposal-card-btn {
+  min-width: 100%;
   animation: proposal-card-btn-animation 15s infinite;
 }
 
 .proposal-card-books-img {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 375px) {
   .proposal-card-btn {
     min-width: 255px;
   }

@@ -1,11 +1,11 @@
 .footer {
+  background-color: var(--black);
 }
 .footer .container {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(var(--white-rgb), 0.6);
-  background: var(--black);
 }
 .footer-references {
   display: flex;
