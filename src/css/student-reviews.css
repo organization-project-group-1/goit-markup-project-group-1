@@ -50,34 +50,40 @@
   }
 }
 
+.students-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
 .students-list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  gap: 32px;
-  justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
 }
 
-/* Мобілка — 1 картка */
 @media (max-width: 767px) {
-  .students-list {
-    grid-template-columns: auto;
-  }
+    .students-list {
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
 }
 
-/* Планшет — 2 картки */
 @media (min-width: 768px) and (max-width: 1279px) {
-  .students-list {
-    grid-template-columns: repeat(2, auto);
-  }
+    .students-list {
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
 }
 
-/* Десктоп — 3 картки */
 @media (min-width: 1280px) {
-  .students-list {
-    grid-template-columns: repeat(3, auto);
-  }
+    .students-list {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 32px;
+        justify-content: center;
+    }
 }
 
 .student-card {

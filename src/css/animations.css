@@ -98,3 +98,36 @@
     transform: scale(1);
   }
 }
+
+@keyframes carousel-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
+
+@keyframes carousel-tab {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes carousel-tab-centered {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-calc(50% - 160px));
+  }
+  66% {
+    transform: translateX(-calc(100% - 50% - 160px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
