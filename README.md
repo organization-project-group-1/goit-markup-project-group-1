@@ -2,21 +2,22 @@
 
 Modern responsive landing page for an English language learning platform.
 
-**Live Demo:** [https://organization-project-group-1.github.io/goit-markup-project-group-1/](https://organization-project-group-1.github.io/goit-markup-project-group-1/)
+**Live Demo:**
+[https://organization-project-group-1.github.io/goit-markup-project-group-1/](https://organization-project-group-1.github.io/goit-markup-project-group-1/)
 
-## Team Contributors
+## Created with ❤️ by **The Curious Minds**:
 
-| Role | Name | GitHub | Responsibilities                                                                        |
-|------|------|--------|-----------------------------------------------------------------------------------------|
-| **Team Lead** | Vitalii Vasylets | [@Mohara88s](https://github.com/Mohara88s) | Project architecture, code review, deployment, Proposal to leave an application section |
-| **Scrum Master** | Oleksii Shcherbak | [@oleksii-shcherbak](https://github.com/oleksii-shcherbak) | Sprint planning, Hero section                                                           |
-| **Developer** | Andrii Tsylyuryk | [@AndriiTsylyuryk](https://github.com/AndriiTsylyuryk) | About Us section                                                                        |
-| **Developer** | Anna Kotenko | [@AnnaKotenkoInIT](https://github.com/AnnaKotenkoInIT) | Application form                                                                        |
-| **Developer** | Kostiantyn Talamaniuk | [@antifloodbot](https://github.com/antifloodbot) | Student Reviews section                                                                 |
-| **Developer** | Dmytro Beketov | [@dmytro4308](https://github.com/dmytro4308) | Header & Navigation                                                                     |
-| **Developer** | Vladyslav Kovalchuk | [@KovalchukODS](https://github.com/KovalchukODS) | Footer section                                                                          |
-| **Developer** | Nataliia Dubikova | [@Natalka-01](https://github.com/Natalka-01) | Our Lessons section                                                                     |
-| **Developer** | Tetiana Makara | [@Tetiana-co](https://github.com/Tetiana-co) | Our Teachers section                                                                    |
+| Role             | Name                  | GitHub                                                     | Responsibilities                                                                        |
+| ---------------- | --------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Team Lead**    | Vitalii Vasylets      | [@Mohara88s](https://github.com/Mohara88s)                 | Project architecture, code review, deployment, Proposal to leave an application section |
+| **Scrum Master** | Oleksii Shcherbak     | [@oleksii-shcherbak](https://github.com/oleksii-shcherbak) | Sprint planning, Hero section                                                           |
+| **Developer**    | Andrii Tsylyuryk      | [@AndriiTsylyuryk](https://github.com/AndriiTsylyuryk)     | About Us section                                                                        |
+| **Developer**    | Anna Kotenko          | [@AnnaKotenkoInIT](https://github.com/AnnaKotenkoInIT)     | Application form                                                                        |
+| **Developer**    | Kostiantyn Talamaniuk | [@antifloodbot](https://github.com/antifloodbot)           | Student Reviews section                                                                 |
+| **Developer**    | Dmytro Beketov        | [@dmytro4308](https://github.com/dmytro4308)               | Header & Navigation                                                                     |
+| **Developer**    | Vladyslav Kovalchuk   | [@KovalchukODS](https://github.com/KovalchukODS)           | Footer section                                                                          |
+| **Developer**    | Nataliia Dubikova     | [@Natalka-01](https://github.com/Natalka-01)               | Our Lessons section                                                                     |
+| **Developer**    | Tetiana Makara        | [@Tetiana-co](https://github.com/Tetiana-co)               | Our Teachers section                                                                    |
 
 ## Features
 
@@ -82,10 +83,9 @@ npm run build
 - [x] Optimized images (including retina)
 - [x] Favicon configured
 - [x] W3C validated HTML/CSS
-- [x] PageSpeed score > 80%
+- [x] PageSpeed score > 90%
 - [x] GitHub Pages deployment
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
