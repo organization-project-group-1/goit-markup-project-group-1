@@ -78,6 +78,14 @@
   gap: 12px;
 }
 
+.footer-socials-link:focus {
+  border-color: rgba(var(--green-rgb), 0.1);
+}
+
+.footer-socials-link:focus > .socials-svg {
+  fill: var(--green);
+}
+
 .footer-legal {
   display: flex;
   flex-direction: column;
